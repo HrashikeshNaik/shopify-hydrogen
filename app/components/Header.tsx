@@ -13,7 +13,7 @@ export function Header({header, isLoggedIn, cart}: HeaderProps) {
   return (
     <header className="header">
       <NavLink prefetch="intent" to="/" style={activeLinkStyle} end>
-        <strong>Hrashikesh</strong>
+        <strong>{shop.name}</strong>
       </NavLink>
       <HeaderMenu
         menu={menu}
